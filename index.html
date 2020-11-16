@@ -14,35 +14,52 @@
   </head>
   <body>
     <header>
-        <div class="enTete">
-          <h1>Danny Poizot</h1>
-          <p>Développeur Web</p>
-        </div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
         <div id="sidenav" class="sidenav1">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="#Profil">Profil</a>
-          <a href="#Coordonnees">Coordonnées</a>
           <a href="#Diplomes">Diplômes</a>
           <a href="#Competences">Compétences</a>
           <a href="#ExperiencesProfessionnelles">Expériences professionnelles</a>
           <a href="#Loisirs">Loisirs</a>
+          <a href="#Coordonnees">Coordonnées</a>
+        <div class="boutons social-icons">
+          <ul>
+            <li><a href="tel:+33768707662"><i class="fas fa-phone-square-alt"></i></a></li>
+            <li><a href="mailto:poizot.dan@gmail.com"><i class="fas fa-envelope"></i></a></li>
+          </ul>
         </div>
+        <a href="img/CV Danny.pdf" target="_blank" download="CV Danny.pdf">
+          <button class="btn draw-border">
+            <i class="fas fa-file-download"></i> MonCV
+          </button>
+        </a>
+        </div>
+        <div id="name" class="enTete">
+          <h1>Danny Poizot</h1>
+        </div>
+
     </header>
+    <div class="hero-image">
+      <div class="hero-text">
+        <p>Développeur Web</p>
+        <a href="img/CV Danny.pdf" target="_blank" download="CV Danny.pdf">
+          <button class="btn draw-border">
+            <i class="fas fa-file-download"></i> MonCV
+          </button>
+        </a>
+      </div>
+    </div>
+
     <main id="main">
-      <section>
-        <div class="profil">
-          <a id="Profil"></a>
+      <section id="Profil">
           <h2>Profil</h2>
           <p>Passionné de musique, de culture et de multimédias, j'ai besoin d'étendre ma soif de connaissance et de partage.</p>
-        </div>
       </section>
-      <section>
-        <div class="diplomes">
-          <a id="Diplomes"></a>
+      <section id="Diplomes">
           <h2>Diplômes</h2>
-          <p></p>
-        </div>
+          <p class="date">2010 - 2011</p>
+          <p>BTS Transport et Prestations Logistiques - Lycée Henri Wallon, Valenciennes</p>
       </section>
       <section>
         <div class="competences">
@@ -53,6 +70,7 @@
           <i class="fab fa-2x fa-github"></i>
         </div>
       </section>
+
       <section>
         <div class="expro">
           <a id="ExperiencesProfessionnelles"></a>
@@ -68,12 +86,15 @@
         </div>
       </section>
     </main>
-    <footer id="footer">      
+    <footer id="footer">
+      <section>
+
         <div class="coordonnées">
           <a id="Coordonnees"></a>
           <h2>Coordonnées</h2>
           <p></p>
         </div>
+      </section>
     </footer>
   </body>
 </html>

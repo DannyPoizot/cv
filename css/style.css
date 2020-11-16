@@ -1,0 +1,316 @@
+/* Début Reset Css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fin du Reset */
+/* css ici mobil first */
+html{
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family : 'Oswald', sans-serif;
+	padding: 10px;
+	margin: 10px;
+}
+h1{
+	font-size: 1.6rem;
+}
+h2, a{
+	font-size: 1.4rem;
+}
+header{
+	background-color: #4f5968;
+	padding: 15px;
+	letter-spacing: -0.25rem;
+	position: sticky;
+	top: 0px;
+}
+section{
+	padding: 100px 10px;
+	margin: 5px;
+}
+p{
+	padding: 15px;
+	margin: 10px;
+}
+.enTete{
+	text-align: center;
+	display: inline-block;
+	letter-spacing: normal;
+}
+
+.fa-html5{
+	color: red;
+	padding: 15px;
+	margin: 10px;
+}
+.fa-css3-alt{
+	color: blue;
+	padding: 15px;
+	margin: 10px;
+}
+.fa-github{
+	color: blue;
+	padding: 15px;
+	margin: 10px;
+}
+.date{
+	font-weight: bold;
+}
+
+.fa-phone-square-alt,.fa-envelope{
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav1 .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.sidenav1{
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+  background-color: #4f5968; /* Gray*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.studyrama.com/IMG/arton765.png");
+
+  /* Set a specific height */
+  height: 40vh;
+	z-index: -1;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/* The navigation menu links */
+.sidenav1>a, .boutons {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+	letter-spacing: normal;
+
+}
+.enTete, span{
+	color: white;
+}
+.boutons{
+	display: flex;
+}
+.boutons>a{
+	    padding: 20px 40px 20px 0;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav1 a:hover {
+  color: #f1f1f1;
+}
+.draw-border {
+	box-shadow: inset 0 0 0 4px #58cdd1;
+	color: #58afd1;
+	-webkit-transition: color 0.25s 0.0833333333s;
+	transition: color 0.25s 0.0833333333s;
+	position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+	border: 0 solid transparent;
+	box-sizing: border-box;
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	width: 0rem;
+	height: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.draw-border::before {
+	border-bottom-width: 4px;
+	border-left-width: 4px;
+}
+
+.draw-border::after {
+	border-top-width: 4px;
+	border-right-width: 4px;
+}
+
+.draw-border:hover {
+	color: #f1f1f1;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+	border-color: #B59A65;
+	-webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+	transition: border-color 0s, width 0.25s, height 0.25s;
+	width: 100%;
+	height: 100%;
+}
+
+.draw-border:hover::before {
+	-webkit-transition-delay: 0s, 0s, 0.25s;
+	transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+	-webkit-transition-delay: 0s, 0.25s, 0s;
+	transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	line-height: 1.5;
+	font: 700 1.2rem 'Roboto Slab', sans-serif;
+	padding: 0.75em 2em;
+	letter-spacing: 0.05rem;
+	width: 100%;
+}
+
+.btn:focus {
+	outline: 2px dotted #B59A65;
+}
+
+.social-icons li {
+	display: inline-block;
+	margin: 0.15em;
+	position: relative;
+}
+
+.social-icons i {
+	color: #f1f1f1;
+	position: absolute;
+	top: 0.75em;
+	left: 1em;
+	transition: all 265ms ease-out;
+}
+
+.social-icons a {
+	display: inline-block;
+}
+
+.social-icons a:before {
+	transform: scale(1);
+	-ms-transform: scale(1);
+	-webkit-transform: scale(1);
+	content: " ";
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	display: block;
+	transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+	transform: scale(0);
+	transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+	transform: scale(2.2);
+	-ms-transform: scale(2.2);
+	-webkit-transform: scale(2.2);
+	color: #B59A65;
+	background: -webkit-linear-gradient(45deg, #B59A65, #69604F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 265ms ease-in;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+	.sidenav1 {
+  	width: 250px;
+	}
+	.sidenav1 a:hover {
+	  color: #B59A65;
+	}
+	#footer{
+		margin: 5px;
+		margin-left: 250px;
+		padding: 10px;
+	}
+	#main {
+	  margin-left: 250px; /* Same as the width of the sidenav */
+	  padding: 0px 10px;
+	}
+}
