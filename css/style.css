@@ -361,7 +361,7 @@ h3, h4{
   transform: translatey(10px);
 }
 
-p{
+.ageval>p{
   text-align:center;
   width:220px;
   transform: translatex(12px);
