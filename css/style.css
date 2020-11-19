@@ -329,7 +329,9 @@ p{
 	.container .card .face{
 	    width: 300px;
 	}
-
+	.coordonnées>.btn{
+		width: 100%;
+	}
 }
 
 .dates{
@@ -426,4 +428,7 @@ p{
 .container .card .face.face2 .content a:hover{
     background: #333;
     color: #fff;
+}
+.coordonnées>.social-icons i{
+	color: #B59A65;
 }
