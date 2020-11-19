@@ -332,13 +332,18 @@ p{
 
 }
 
+.dates{
+	color : #fff;
+	width: 100%;
+	padding: 1px;
+}
 
 .container{
     width: 100%;
     display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .container .card{
@@ -362,7 +367,7 @@ p{
 }
 
 .container .card:hover .face.face1{
-    background: #ff0057;
+    background:#B59A65;
     transform: translateY(0);
 }
 
@@ -380,7 +385,7 @@ p{
 }
 
 .container .card .face.face1 .content h3,h4{
-    margin: 10px 0 0;
+    margin: 5px 0 0;
     padding: 0;
     color: #fff;
     text-align: center;
