@@ -44,7 +44,11 @@ table {
 }
 /* Fin du Reset */
 /* css ici mobil first */
+*{
+	box-sizing: border-box;
+}
 html{
+	scroll-behavior: smooth;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;
 }
@@ -71,9 +75,16 @@ section{
 	padding: 100px 10px 0 10px;
 	margin: 5px;
 }
+footer{
+	background-color: #4f5968;
+}
+#copyright{
+	background-color: #2F4F4F;
+	text-align: center;
+	color: white;
+}
 p{
-	padding: 15px;
-	margin: 10px;
+	padding: 25px;
 }
 .fa-music{
 	color:
@@ -90,17 +101,19 @@ p{
 .loisirs> i:hover{
  filter: blur(2px);
 }
-.fa-html5{
+
+}
+#Competences .fa-html5{
 	color: red;
 	padding: 15px;
 	margin: 10px;
 }
-.fa-css3-alt{
+#Competences .fa-css3-alt{
 	color: blue;
 	padding: 15px;
 	margin: 10px;
 }
-.fa-github{
+#Competences .fa-github{
 	color: blue;
 	padding: 15px;
 	margin: 10px;
@@ -266,7 +279,7 @@ p{
 	color: #f1f1f1;
 	position: absolute;
 	top: 0.75em;
-	left: 1em;
+	/* left: 1em; */
 	transition: all 265ms ease-out;
 }
 
@@ -312,16 +325,17 @@ p{
 	.sidenav1 a:hover {
 	  color: #B59A65;
 	}
-	#footer{
-		margin: 5px;
-		margin-left: 250px;
-		padding: 10px;
-	}
 	#main {
 	  margin-left: 250px; /* Same as the width of the sidenav */
 	  padding: 0px 10px;
 	}
-
+	#name{
+	margin-left: 250px; /* Same as the width of the sidenav */
+	 padding: 0px 5px;
+	}
+	#footer{
+		margin-left: 250px;
+	}
 	.container{
 			flex-direction: row !important;
 			flex-wrap: wrap;
@@ -329,15 +343,54 @@ p{
 	.container .card .face{
 	    width: 300px;
 	}
-	.coordonnées>.btn{
-		width: 100%;
+	.card{
+		padding: 0;
 	}
+
+	.container .card .face.face2{
+	    transform: translateY(-125px);
+	}
+	.container .card .face.face1{
+	    position: relative;
+	    background: #333;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    z-index: 1;
+			transform: translateY(125px);
+	}
+	.container .card .face.face1{
+			background:#333 !important;
+	    /* transform: translateY(100px); */
+	}
+	.container .card:hover .face.face1{
+	    background:#B59A65 !important;
+	    transform: translateY(0);
+	}
+	.container .card .face.face1 .content{
+	    opacity: 0.2;
+	    transition: 0.5s;
+	}
+
+	.container .card:hover .face.face1 .content{
+	    opacity: 1;
+	}
+
+}
+
+.coordonnées{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 50px 10px;
+	flex-wrap: wrap;
+	color: white;
 }
 
 .dates{
 	color : #fff;
 	width: 100%;
-	padding: 1px;
+	padding: 5px;
 }
 
 .container{
@@ -351,43 +404,34 @@ p{
 .container .card{
     position: relative;
     cursor: pointer;
+		padding: 25px 0;
 }
 
 .container .card .face{
-    height: 200px;
+    height: 250px;
     transition: 0.5s;
 }
 
 .container .card .face.face1{
     position: relative;
-    background: #333;
+		background:#B59A65;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
-    background:#B59A65;
-    transform: translateY(0);
-}
 
-.container .card .face.face1 .content{
-    opacity: 0.2;
-    transition: 0.5s;
-}
 
-.container .card:hover .face.face1 .content{
-    opacity: 1;
-}
+
 
 .container .card .face.face1 .content img{
-  width: 100%;
+  height: 100px;
 }
 
 .container .card .face.face1 .content h3,h4{
     margin: 5px 0 0;
+		padding: 5px;
     padding: 0;
     color: #fff;
     text-align: center;
@@ -402,8 +446,7 @@ p{
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
 .container .card:hover .face.face2{
@@ -431,4 +474,7 @@ p{
 }
 .coordonnées>.social-icons i{
 	color: #B59A65;
+}
+.content{
+	text-align: center;
 }

@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap" rel="stylesheet">
-  <script src="js/scriptnav.js" charset="utf-8"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Danny Poizot</title>
 </head>
@@ -17,12 +16,12 @@
     <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
     <div id="sidenav" class="sidenav1">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#Profil">Profil</a>
-      <a href="#Diplomes">Diplômes</a>
-      <a href="#Competences">Compétences</a>
-      <a href="#ExperiencesProfessionnelles">Expériences professionnelles</a>
-      <a href="#Loisirs">Loisirs</a>
-      <a href="#Coordonnees">Coordonnées</a>
+      <a href="#Profil" onclick="closeNav()">Profil</a>
+      <a href="#Diplomes" onclick="closeNav()">Diplômes</a>
+      <a href="#Competences" onclick="closeNav()">Compétences</a>
+      <a href="#ExperiencesProfessionnelles" onclick="closeNav()">Expériences professionnelles</a>
+      <a href="#Loisirs" onclick="closeNav()">Loisirs</a>
+      <a href="#footer" onclick="closeNav()">Coordonnées</a>
       <div class="boutons social-icons">
         <ul>
           <li><a href="tel:+33768707662"><i class="fas fa-phone-square-alt"></i></a></li>
@@ -115,6 +114,9 @@
             <div class="face face2">
               <div class="content">
                 <p>Découvertes et apprentissage des techniques de bases de mise en place d'un service de salle, de tenue d'un bar et de préparation de cocktails.</p>
+                <a href="img/Danny Poizot - CV.pdf" target="_blank" download="Danny Poizot - CV.pdf">
+                  <button class="btn draw-border">+ d'infos</button>
+                </a>
               </div>
             </div>
           </div>
@@ -145,14 +147,13 @@
     </section>
   </main>
   <footer id="footer">
-    <section id="Coordonnees">
       <div class="coordonnées">
         <h2>Coordonnées</h2>
         <div class="boutons social-icons">
           <ul>
             <li><a href="tel:+33768707662"><i class="fas fa-phone-square-alt"></i></a></li>
             <li><a href="mailto:poizot.dan@gmail.com"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/danny-poizot-51224a1ba/" target:"_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/danny-poizot-51224a1ba/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/DannyPoizot" target="_blank"><i class="fab fa-github"></i></a></li>
           </ul>
         </div>
@@ -162,7 +163,11 @@
           </button>
         </a>
       </div>
-    </section>
+      <div id="copyright">
+        <p>Copyright © <span id="date"></span> Poizot Danny Tous Droits Réservés.</p>
+      </div>
   </footer>
+  <script src="js/scriptnav.js" charset="utf-8"></script>
+
 </body>
 </html>
