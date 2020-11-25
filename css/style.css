@@ -98,10 +98,14 @@ p{
 	padding: 20px;
 	margin: 10px;
 }
-.loisirs> i:hover{
- filter: blur(2px);
+.fa-music{
+	color : blue;
 }
-
+.fa-guitar{
+	color: brown;
+}
+.fa-gamepad{
+	color: blue;
 }
 #Competences .fa-html5{
 	color: red;
@@ -386,7 +390,13 @@ p{
 	flex-wrap: wrap;
 	color: white;
 }
-
+/* .cvnav{
+	display: block;
+	text-align: center;
+	border: solid black 1px;
+	width: 150px;
+	margin: auto;
+} */
 .dates{
 	color : #fff;
 	width: 100%;
