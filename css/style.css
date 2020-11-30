@@ -75,6 +75,7 @@ header{
 section{
 	padding: 100px 10px 0 10px;
 	margin: 5px;
+	clear: both;
 }
 footer{
 	background-color: #4f5968;
@@ -89,6 +90,7 @@ footer h2{
 }
 p{
 	padding: 25px;
+	line-height: 1.3em;
 }
 
 
@@ -130,6 +132,18 @@ p{
 	color: blue;
 	padding: 15px;
 	margin: 10px;
+}
+#Competences>div{
+	width: 50%;
+	height: 400px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+}
+
+
+#Competences img{
+	height: 100%;
 }
 .date{
 	font-weight: bold;
@@ -519,7 +533,9 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none; }
-
+.tabs p:first-of-type{
+	font-style: italic;
+}
 .tabs {
   display: block;
   display: -webkit-flex;
@@ -586,3 +602,7 @@ select:focus {
       margin-left: -100%; }
 			.tabs .tab-2:nth-child(1n+3) [type="radio"]:checked + div {
 				margin-left: -200%; }
+
+
+
+		
