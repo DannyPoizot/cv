@@ -17,3 +17,18 @@ function closeNav(){
 let date = new Date();
 let annee = date.getFullYear();
 document.getElementById("date").innerHTML = annee;
+
+let birthday = new Date("1991,11,19");
+let CurrentYear = new Date();
+let age = CurrentYear.getFullYear() - birthday.getFullYear();
+let month = CurrentYear.getMonth() - birthday.getMonth();
+let day = CurrentYear.getDate() - birthday.getDate();
+
+function calculAge(){
+  if (month < 0) {
+    age--
+  } else if (month === 0 && day < 0){
+    age--
+  }
+  document.getElementById("birthdate").innerHTML = "je suis agé de "+ age + " " + "ans";
+}
