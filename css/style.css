@@ -148,7 +148,9 @@ p{
 #Competences i{
 	width: 100%;
 }
-
+.js{
+	background: none;
+}
 .date{
 	font-weight: bold;
 }
@@ -517,8 +519,6 @@ p{
 .content{
 	text-align: center;
 }
-
-
 
 
 

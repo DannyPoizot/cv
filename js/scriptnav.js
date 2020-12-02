@@ -30,5 +30,5 @@ function calculAge(){
   } else if (month === 0 && day < 0){
     age--
   }
-  document.getElementById("birthdate").innerHTML = "je suis agé de "+ age + " " + "ans";
+  document.getElementById("birthdate").innerHTML = "Je suis agé de "+ age + " " + "ans";
 }
