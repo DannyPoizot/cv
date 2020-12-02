@@ -147,7 +147,9 @@ p{
 #Competences i{
 	width: 100%;
 }
-
+#Loisirs{
+	display: contents;
+}
 .date{
 	font-weight: bold;
 }
