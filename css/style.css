@@ -117,6 +117,7 @@ p{
 }
 .fa-gamepad{
 	color: blue;
+	width: 10%;
 }
 #Competences .fa-html5{
 	color: red;
@@ -147,9 +148,7 @@ p{
 #Competences i{
 	width: 100%;
 }
-#Loisirs{
-	display: contents;
-}
+
 .date{
 	font-weight: bold;
 }
