@@ -32,3 +32,7 @@ function calculAge(){
   }
   document.getElementById("birthdate").innerHTML = "Je suis agé de "+ age + " " + "ans";
 }
+
+function myFunction(){
+  alert("Merci !");
+}

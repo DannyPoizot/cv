@@ -150,6 +150,7 @@ p{
 }
 .js{
 	background: none;
+	padding: 2px;
 }
 .date{
 	font-weight: bold;
