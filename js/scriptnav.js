@@ -15,14 +15,14 @@ function closeNav(){
   document.body.style.backgroundColor = "white";
 }
 let date = new Date();
-let annee = date.getFullYear();
-document.getElementById("date").innerHTML = annee;
+let year = date.getFullYear();
+document.getElementById("date").innerHTML = year;
 
 let birthday = new Date("1991,11,19");
-let CurrentYear = new Date();
-let age = CurrentYear.getFullYear() - birthday.getFullYear();
-let month = CurrentYear.getMonth() - birthday.getMonth();
-let day = CurrentYear.getDate() - birthday.getDate();
+let currentYear = new Date();
+let age = currentYear.getFullYear() - birthday.getFullYear();
+let month = currentYear.getMonth() - birthday.getMonth();
+let day = currentYear.getDate() - birthday.getDate();
 
 function calculAge(){
   if (month < 0) {
@@ -32,7 +32,6 @@ function calculAge(){
   }
   document.getElementById("birthdate").innerHTML = "Je suis agé de "+ age + " " + "ans";
 }
-
-function myFunction(){
+function myFunction() {
   alert("Merci !");
 }

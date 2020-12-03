@@ -148,7 +148,11 @@ p{
 #Competences i{
 	width: 100%;
 }
+#birthdate{
+	color: black;
+}
 .js{
+	color: blue;
 	background: none;
 	padding: 2px;
 }
