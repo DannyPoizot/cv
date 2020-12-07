@@ -88,14 +88,14 @@ footer h2{
 	text-align: center;
 	color: white;
 }
+
 p{
 	padding: 25px;
 	line-height: 1.3em;
 }
 
-
 .fa-music{
-	color:
+	color: black;
 }
 .enTete{
 	text-align: center;
@@ -193,7 +193,7 @@ p{
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.studyrama.com/IMG/arton765.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
 
   /* Set a specific height */
   height: 40vh;
@@ -206,6 +206,7 @@ p{
 
 /* Place text in the middle of the image */
 .hero-text {
+	font-size: 30px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -536,9 +537,6 @@ p{
     text-align: center;
     font-size: 1.5em;
 }
-
-
-
 
 
 
