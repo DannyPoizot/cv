@@ -24,14 +24,13 @@ let age = currentYear.getFullYear() - birthday.getFullYear();
 let month = currentYear.getMonth() - birthday.getMonth();
 let day = currentYear.getDate() - birthday.getDate();
 
-function calculAge(){
   if (month < 0) {
     age--
   } else if (month === 0 && day < 0){
     age--
   }
-  document.getElementById("birthdate").innerHTML = "Je suis agé de "+ age + " " + "ans";
-}
+  document.getElementById("birthdate").innerHTML = "Agé de "+ age + " " + "ans, " + "passionné de musique et également musicien dans un groupe, " + "de culture " + "et de partage de connaissance, " + "le domaine du numérique m'apporte de nouveaux horizons " + "tout en gardant ces notions de culture.";
+
 function myFunction() {
   alert("Merci !");
 }
