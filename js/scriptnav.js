@@ -16,7 +16,7 @@ function closeNav(){
 }
 let date = new Date();
 let year = date.getFullYear();
-document.getElementById("date").innerHTML = year;
+document.getElementById("date").innerHTML = "Copyright © " + year + " Poizot Danny Tous Droits Réservés.";
 
 let birthday = new Date("1991,11,19");
 let currentYear = new Date();
