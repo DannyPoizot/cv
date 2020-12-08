@@ -14,6 +14,7 @@ function closeNav(){
   document.getElementById("name").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
+
 let date = new Date();
 let year = date.getFullYear();
 document.getElementById("date").innerHTML = "Copyright © " + year + " Poizot Danny Tous Droits Réservés.";
