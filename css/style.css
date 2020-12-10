@@ -119,6 +119,14 @@ p{
 	color: blue;
 	width: 10%;
 }
+.photo img{
+	width: 100%;
+}
+.photo{
+	width: 100px;
+	position: absolute;
+	left: 80%;
+}
 #Competences .fa-html5{
 	color: red;
 	padding: 15px;

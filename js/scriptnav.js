@@ -14,6 +14,9 @@ function closeNav(){
   document.getElementById("name").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
+function click() {
+  event.stopPropagation();
+}
 
 let date = new Date();
 let year = date.getFullYear();
