@@ -120,11 +120,14 @@ p{
 	width: 10%;
 }
 .photo img{
-	width: 100%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 10px;
 }
 .photo{
-	width: 100px;
-	position: absolute;
+	text-align: center;
+	width: 100%;
 	left: 80%;
 }
 #Competences .fa-html5{

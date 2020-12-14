@@ -14,8 +14,13 @@ function closeNav(){
   document.getElementById("name").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
-function click() {
-  event.stopPropagation();
+
+document.onclick = function(e) {
+  if(e.target.id != "open"){
+    closeNav();
+  }else{
+    openNav();
+  }
 }
 
 let date = new Date();
