@@ -131,33 +131,35 @@ p{
 	left: 80%;
 }
 #Competences .fa-html5{
-	color: red;
+	color: #ec4f2cc7;
 	padding: 15px;
 	margin: 10px;
 }
 #Competences .fa-css3-alt{
-	color: blue;
+	color: #1c88c8;
 	padding: 15px;
 	margin: 10px;
 }
 #Competences .fa-github{
-	color: blue;
+	color: #3399db;
 	padding: 15px;
 	margin: 10px;
 }
 #Competences>div{
-	width: 50%;
-	height: 400px;
 	box-sizing: border-box;
 	float: left;
 	text-align: center;
+	height: 280px;
 }
+
 #Competences img{
 	width: 100%;
-	height: 100%;
+	position: relative;
+	margin-left: 50%;
 }
 #Competences i{
-	width: 100%;
+	width: 25%;
+	margin-right: 10%;
 }
 #birthdate{
 	color: black;
@@ -384,9 +386,15 @@ p{
 	#footer{
 		margin-left: 250px;
 	}
+	#Competences i{
+    width: 26%;
+	}
 
 	#Competences img {
-	    height: 100%;
+			width: 30%;
+	}
+	.image{
+		width: 79%;
 	}
 	.container{
 			flex-direction: row !important;
