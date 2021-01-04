@@ -121,7 +121,6 @@ p{
 }
 .photo img{
 	width: 200px;
-	height: 200px;
 	border-radius: 50%;
 	margin: 10px;
 }
@@ -405,6 +404,9 @@ p{
 	}
 	.card{
 		padding: 0;
+	}
+	.para{
+		width: 50%;
 	}
 
 	.container .card .face.face2{
