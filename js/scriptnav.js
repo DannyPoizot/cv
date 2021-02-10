@@ -16,7 +16,7 @@ function closeNav(){
 }
 
 document.onclick = function(e) {
-  if(e.target.id != "open"){
+   if(e.target.id != "open"){
     closeNav();
   }else{
     openNav();

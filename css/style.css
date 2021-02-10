@@ -125,9 +125,9 @@ p{
 	margin: 10px;
 }
 .photo{
-	text-align: center;
-	width: 100%;
-	left: 80%;
+	text-align: right;
+	display: inline-block;
+	width: 87%;
 }
 #Competences .fa-html5{
 	color: #ec4f2cc7;
@@ -391,6 +391,9 @@ p{
 
 	#Competences img {
 			width: 30%;
+	}
+	.photo{
+		width: 100%;
 	}
 	.image{
 		width: 79%;
