@@ -4,6 +4,7 @@ function openNav(){
   document.getElementById("hero-image").style.marginLeft = "250px";
   document.getElementById("footer").style.marginLeft = "250px";
   document.getElementById("name").style.marginLeft = "250px";
+  document.getElementById("Portfolio").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 function closeNav(){
@@ -12,6 +13,7 @@ function closeNav(){
   document.getElementById("hero-image").style.marginLeft = "0";
   document.getElementById("footer").style.marginLeft = "0";
   document.getElementById("name").style.marginLeft = "0";
+  document.getElementById("Portfolio").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
 
