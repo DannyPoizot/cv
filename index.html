@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animationJs.css">
   <link rel="stylesheet" href="css/portfolio.css">
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -25,7 +24,7 @@
       <a href="#Competences" onclick="closeNav()">Compétences</a>
       <a href="#ExperiencesProfessionnelles" onclick="closeNav()">Expériences professionnelles</a>
       <a href="#Loisirs" onclick="closeNav()">Loisirs</a>
-      <a href="#Portfolio" onclick="closeNav()">Portfolio</a>
+      <a href="#portfolio" onclick="closeNav()">Portfolio</a>
       <a href="#footer" onclick="closeNav()">Coordonnées</a>
       <div class="boutons social-icons">
         <ul>
@@ -193,12 +192,24 @@
         <i class="fas fa-2x fa-gamepad"></i>
       </div>
     </section>
-    <section id="Portfolio">
+    <section id="portfolio">
       <h2>Portfolio</h2>
-      <div class="owl-carousel">
-        <div class="div1">
-          <img src="img/imgflex1.jpg" alt="image1">
-          <figcaption>Azul</figcaption>
+      <div id="pictureFlex">
+        <div class="modal">
+          <img onclick="openModal()" src="img/concertCarreDasJuin2020.jpg" alt="concert">
+          <figcaption>Concerts</figcaption>
+        </div>
+        <div id="modalConcerts">
+            <span onclick="closeModal()">&times;</span>
+          <div onclick="closeModal()" class="modal-content close">
+            <img src="img/concertCarreDas2020.jpg" alt="Concert Carré D'as Valenciennes">
+          </div>
+          <div onclick="closeModal()" class="modal-content close">
+            <img src="img/concertFut2020.jpg" alt="Concert au Fût et à Mesure Valenciennes">
+          </div>
+          <div onclick="closeModal()" class="modal-content close">
+            <img src="img/concertfutSept2020.jpg" alt="Concert au Fût et à Mesure Valenciennes">
+          </div>
         </div>
         <div clas="div2">
           <img src="img/imgflex2.jpg" alt="">
@@ -224,8 +235,8 @@
           <img src="img/imgflex7.png" alt="">
           <figcaption>Amarillo</figcaption>
         </div>
-      </div>
     </section>
+
 
 
   </main>
@@ -251,9 +262,9 @@
       </div>
   </footer>
 
-  <script src="jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="js/scriptnav.js" charset="utf-8"></script>
+<!-- <script src="jquery.min.js"></script> -->
+<script src="js/scriptnav.js" charset="utf-8"></script>
+<script src="js/animationJs.js"></script>
 
 </body>
 </html>

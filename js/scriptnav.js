@@ -1,3 +1,13 @@
+let modal = document.getElementById("modalConcerts");
+
+function openModal() {
+modal.style.display = "block";
+}
+
+function closeModal() {
+modal.style.display = "none";
+}
+
 function openNav(){
   document.getElementById("sidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
