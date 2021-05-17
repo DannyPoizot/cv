@@ -83,6 +83,29 @@ footer{
 footer h2{
 	color: white;
 }
+
+#carousel{
+  position:relative;
+  height:200px;
+  width:700px;
+  margin:auto;
+}
+#carousel img{
+	width: 100%;
+}
+#carousel i{
+  padding-left: 200px;
+  margin-right: 180px;
+}
+.controls{
+  margin-top: 240px;
+  position: absolute;
+  z-index: 1;
+  transform: translate(+50%, -50%);
+	color: white;
+}
+
+
 #copyright{
 	background-color: #2F4F4F;
 	text-align: center;
@@ -92,6 +115,32 @@ footer h2{
 p{
 	padding: 25px;
 	line-height: 1.3em;
+}
+
+#animatedModal{
+	text-align: center;
+	background-color: #4f5968 !important;
+}
+#animatedModal2{
+	text-align: center;
+	background-color: #4f5968 !important;
+}
+.modal-content{
+  margin: auto;
+	width: 100%;
+}
+.fa-arrow-left{
+	padding-right: 950px;
+	margin: -90px;
+}
+.close{
+  color: white;
+  position: relative;
+	text-align: center;
+  cursor: pointer;
+  font-size: 50px;
+  padding: 0 10px 0 0;
+  font-weight: bold;
 }
 .fa-music{
 	color: black;
@@ -439,7 +488,6 @@ p{
 	.container .card:hover .face.face1 .content{
 	    opacity: 1;
 	}
-
 }
 
 .coordonnées{

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animationJs.css">
   <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -15,17 +15,17 @@
 </head>
 <body>
   <header id="header">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i id="open" class="fas fa-bars"></i></span>
-    <div id="sidenav" class="sidenav1">
+    <span style="font-size:30px;cursor:pointer"><i id="open" class="fas fa-bars"></i></span>
 
+    <div id="sidenav" class="sidenav1">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
-      <a href="#Profil" onclick="closeNav()">Profil</a>
-      <a href="#Diplomes" onclick="closeNav()">Diplômes</a>
-      <a href="#Competences" onclick="closeNav()">Compétences</a>
-      <a href="#ExperiencesProfessionnelles" onclick="closeNav()">Expériences professionnelles</a>
-      <a href="#Loisirs" onclick="closeNav()">Loisirs</a>
-      <a href="#portfolio" onclick="closeNav()">Portfolio</a>
-      <a href="#footer" onclick="closeNav()">Coordonnées</a>
+      <a href="#Profil">Profil</a>
+      <a href="#Diplomes">Diplômes</a>
+      <a href="#Competences">Compétences</a>
+      <a href="#ExperiencesProfessionnelles" >Expériences professionnelles</a>
+      <a href="#Loisirs" >Loisirs</a>
+      <a href="#portfolio" >Portfolio</a>
+      <a href="#footer">Coordonnées</a>
       <div class="boutons social-icons">
         <ul>
           <li><a href="tel:+33768707662"><i class="fas fa-phone-square-alt"></i></a></li>
@@ -195,26 +195,49 @@
     <section id="portfolio">
       <h2>Portfolio</h2>
       <div id="pictureFlex">
-        <div class="modal">
-          <img onclick="openModal()" src="img/concertCarreDasJuin2020.jpg" alt="concert">
-          <figcaption>Concerts</figcaption>
+        <div>
+          <a id="demo01"href="#animatedModal">
+            <img src="img/concertCarreDasJuin2020.jpg" alt="concert">
+            <figcaption>Concerts</figcaption>
+          </a>
+         <div id="animatedModal">
+              <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+            <div class="close-animatedModal">
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-content">
+              <div class="controls">
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div>
+                <div id="carousel">
+                  <ul>
+                    <li><img src="img/concertfutSept2020.jpg" alt="Concert au Fût et à Mesure Valenciennes"></li>
+                    <li><img src="img/concertCarreDas2020.jpg" alt="Concert Carré D'as Valenciennes"></li>
+                    <li><img src="img/concertFut2020.jpg" alt="Concert au Fût et à Mesure Valenciennes"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+         </div>
         </div>
-        <div id="modalConcerts">
-            <span onclick="closeModal()">&times;</span>
-          <div onclick="closeModal()" class="modal-content close">
-            <img src="img/concertCarreDas2020.jpg" alt="Concert Carré D'as Valenciennes">
+        <div>
+           <a id="demo02" href="#animatedModal2">
+             <img src="img/logoUdyssey.png" alt="Udyssey">
+             <figcaption>Udyssey(projet fictif UX/UI)</figcaption>
+           </a>
+         </div>
+          <div id="animatedModal2">
+               <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+             <div class="close-animatedModal2">
+               <span class="close">&times;</span>
+             </div>
+             <div class="modal-content">
+               <img src="img/logo-odyssey-fond-sombre-4x.png" alt="Udyssey">
+               <iframe src="img/croquis.pdf" alt="croquis"></iframe>
+             </div>
           </div>
-          <div onclick="closeModal()" class="modal-content close">
-            <img src="img/concertFut2020.jpg" alt="Concert au Fût et à Mesure Valenciennes">
-          </div>
-          <div onclick="closeModal()" class="modal-content close">
-            <img src="img/concertfutSept2020.jpg" alt="Concert au Fût et à Mesure Valenciennes">
-          </div>
-        </div>
-        <div clas="div2">
-          <img src="img/imgflex2.jpg" alt="">
-          <figcaption>Anaranjado</figcaption>
-        </div>
         <div class="div3">
           <img src="img/imgflex3.jpg" alt="">
           <figcaption>Verde</figcaption>
@@ -235,6 +258,7 @@
           <img src="img/imgflex7.png" alt="">
           <figcaption>Amarillo</figcaption>
         </div>
+      </div>
     </section>
 
 
@@ -261,10 +285,73 @@
         <p id="date"></p>
       </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/scriptnav.js" charset="utf-8"></script>
+  <script src="js/animatedModal.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#demo01").animatedModal({
+      animatedIn: "zoomIn",
+      animatedOut: "bounceOut",
+    });
 
-<!-- <script src="jquery.min.js"></script> -->
-<script src="js/scriptnav.js" charset="utf-8"></script>
-<script src="js/animationJs.js"></script>
+    $("#demo02").animatedModal({
+      animatedIn: "lightSpeedIn",
+      animatedOut: "bounceOutDown",
+    });
 
+    let $carrousel = $("#carousel");
+    let $img = $("#carousel img");
+    let index = $img.length - 1;
+    let i = 0;
+    let $currentImg = $img.eq(i);
+
+    $img.css("display", "none");
+    $currentImg.css("display", "block");
+
+
+    $(".fa-arrow-right").click(function(){
+      i++;
+      if(i <= index){
+        $img.css("display", "none");
+        $currentImg = $img.eq(i);
+        $currentImg.css("display", "block");
+      } else {
+        i = index;
+      }
+    });
+
+    $(".fa-arrow-left").click(function(){
+      i--;
+      if(i >= 0){
+        $img.css("display", "none");
+        $currentImg = $img.eq(i);
+        $currentImg.css("display", "block");
+      } else {
+        i = 0;
+      }
+    });
+
+    function slideImg(){
+      setTimeout(function(){
+        if(i < index){
+	         i++;
+         } else {
+	          i = 0;
+	  }
+
+	   $img.css('display', 'none');
+
+	    $currentImg = $img.eq(i);
+	     $currentImg.css('display', 'block');
+
+	      slideImg();
+
+      }, 3000);
+    }
+  slideImg();
+});
+
+  </script>
 </body>
 </html>
