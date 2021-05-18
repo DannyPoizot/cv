@@ -125,6 +125,10 @@ p{
 	text-align: center;
 	background-color: #4f5968 !important;
 }
+.dimensionImg{
+	width: 50%;
+	text-align: center;
+}
 .modal-content{
   margin: auto;
 	width: 100%;
