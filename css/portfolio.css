@@ -1,0 +1,44 @@
+#pictureFlex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#pictureFlex>div{
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+#pictureFlex img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  transition: width 2s, height 1s;
+}
+#pictureFlex figcaption{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 24px;
+}
+figcaption{
+  color: white;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  #pictureFlex>div{
+    width: calc(100%/3);
+  }
+  #pictureFlex img:hover{
+    filter: none;
+  }
+}
+@media screen and (min-width: 1024px){
+  #pictureFlex>div{
+    width: calc(100%/4);
+  }
+  #pictureFlex img:hover{
+    filter: none;
+  }
+}
